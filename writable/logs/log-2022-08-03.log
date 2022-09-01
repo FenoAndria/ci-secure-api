@@ -1,0 +1,29 @@
+ERROR - 2022-08-03 12:13:52 --> mysqli_sql_exception: Table 'ci_train.members' doesn't exist in C:\laragon\www\CI - Train\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\CI - Train\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\CI - Train\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\CI - Train\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\CI - Train\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\CI - Train\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\CI - Train\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\CI - Train\app\Controllers\MembersController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\CI - Train\system\CodeIgniter.php(936): App\Controllers\MembersController->index()
+#8 C:\laragon\www\CI - Train\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MembersController))
+#9 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2022-08-03 12:13:52 --> Table 'ci_train.members' doesn't exist
+#0 C:\laragon\www\CI - Train\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\CI - Train\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\CI - Train\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\CI - Train\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\CI - Train\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\CI - Train\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\CI - Train\app\Controllers\MembersController.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\CI - Train\system\CodeIgniter.php(936): App\Controllers\MembersController->index()
+#8 C:\laragon\www\CI - Train\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MembersController))
+#9 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#12 {main}

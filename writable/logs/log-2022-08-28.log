@@ -1,0 +1,120 @@
+CRITICAL - 2022-08-28 09:12:25 --> validUser is not a valid rule.
+#0 C:\laragon\www\CI - Train\system\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validUser')
+#1 C:\laragon\www\CI - Train\system\Validation\Validation.php(164): CodeIgniter\Validation\Validation->processRules('password', 'password', 'fenomanjato', Array, Array)
+#2 C:\laragon\www\CI - Train\app\Controllers\BaseController.php(87): CodeIgniter\Validation\Validation->run(Array)
+#3 C:\laragon\www\CI - Train\app\Controllers\AuthController.php(42): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(936): App\Controllers\AuthController->login()
+#5 C:\laragon\www\CI - Train\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#6 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2022-08-28 09:51:09 --> "kid" empty, unable to lookup correct key
+#0 C:\laragon\www\CI - Train\vendor\firebase\php-jwt\src\JWT.php(128): Firebase\JWT\JWT::getKey('kzUf4sxss4AeG5u...', NULL)
+#1 C:\laragon\www\CI - Train\app\Helpers\jwt_helper.php(18): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'kzUf4sxss4AeG5u...', Array)
+#2 C:\laragon\www\CI - Train\app\Filters\JwtauthFilter.php(43): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#3 C:\laragon\www\CI - Train\system\Filters\Filters.php(181): App\Filters\JwtauthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('members/4', 'before')
+#5 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#8 {main}
+CRITICAL - 2022-08-28 09:51:42 --> "kid" empty, unable to lookup correct key
+#0 C:\laragon\www\CI - Train\vendor\firebase\php-jwt\src\JWT.php(128): Firebase\JWT\JWT::getKey('kzUf4sxss4AeG5u...', NULL)
+#1 C:\laragon\www\CI - Train\app\Helpers\jwt_helper.php(18): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'kzUf4sxss4AeG5u...')
+#2 C:\laragon\www\CI - Train\app\Filters\JwtauthFilter.php(43): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#3 C:\laragon\www\CI - Train\system\Filters\Filters.php(181): App\Filters\JwtauthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('members/4', 'before')
+#5 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#8 {main}
+CRITICAL - 2022-08-28 09:52:55 --> "kid" empty, unable to lookup correct key
+#0 C:\laragon\www\CI - Train\vendor\firebase\php-jwt\src\JWT.php(128): Firebase\JWT\JWT::getKey('kzUf4sxss4AeG5u...', NULL)
+#1 C:\laragon\www\CI - Train\app\Helpers\jwt_helper.php(18): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'kzUf4sxss4AeG5u...', Array)
+#2 C:\laragon\www\CI - Train\app\Filters\JwtauthFilter.php(43): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#3 C:\laragon\www\CI - Train\system\Filters\Filters.php(181): App\Filters\JwtauthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('members/4', 'before')
+#5 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#8 {main}
+CRITICAL - 2022-08-28 09:54:42 --> "kid" empty, unable to lookup correct key
+#0 C:\laragon\www\CI - Train\vendor\firebase\php-jwt\src\JWT.php(128): Firebase\JWT\JWT::getKey('feno', NULL)
+#1 C:\laragon\www\CI - Train\app\Helpers\jwt_helper.php(18): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'feno', Array)
+#2 C:\laragon\www\CI - Train\app\Filters\JwtauthFilter.php(43): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#3 C:\laragon\www\CI - Train\system\Filters\Filters.php(181): App\Filters\JwtauthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('members/4', 'before')
+#5 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#8 {main}
+CRITICAL - 2022-08-28 09:54:56 --> "kid" empty, unable to lookup correct key
+#0 C:\laragon\www\CI - Train\vendor\firebase\php-jwt\src\JWT.php(128): Firebase\JWT\JWT::getKey('kzUf4sxss4AeG5u...', NULL)
+#1 C:\laragon\www\CI - Train\app\Helpers\jwt_helper.php(18): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'kzUf4sxss4AeG5u...', Array)
+#2 C:\laragon\www\CI - Train\app\Filters\JwtauthFilter.php(43): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#3 C:\laragon\www\CI - Train\system\Filters\Filters.php(181): App\Filters\JwtauthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('members/4', 'before')
+#5 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#8 {main}
+CRITICAL - 2022-08-28 09:55:39 --> "kid" empty, unable to lookup correct key
+#0 C:\laragon\www\CI - Train\vendor\firebase\php-jwt\src\JWT.php(128): Firebase\JWT\JWT::getKey('kzUf4sxss4AeG5u...', NULL)
+#1 C:\laragon\www\CI - Train\app\Helpers\jwt_helper.php(19): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'kzUf4sxss4AeG5u...', Array)
+#2 C:\laragon\www\CI - Train\app\Filters\JwtauthFilter.php(43): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#3 C:\laragon\www\CI - Train\system\Filters\Filters.php(181): App\Filters\JwtauthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('members/4', 'before')
+#5 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#8 {main}
+CRITICAL - 2022-08-28 10:00:05 --> "kid" empty, unable to lookup correct key
+#0 C:\laragon\www\CI - Train\vendor\firebase\php-jwt\src\JWT.php(128): Firebase\JWT\JWT::getKey('kzUf4sxss4AeG5u...', NULL)
+#1 C:\laragon\www\CI - Train\app\Helpers\jwt_helper.php(19): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'kzUf4sxss4AeG5u...', 'HS256')
+#2 C:\laragon\www\CI - Train\app\Filters\JwtauthFilter.php(43): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#3 C:\laragon\www\CI - Train\system\Filters\Filters.php(181): App\Filters\JwtauthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('members/4', 'before')
+#5 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#8 {main}
+CRITICAL - 2022-08-28 10:00:12 --> "kid" empty, unable to lookup correct key
+#0 C:\laragon\www\CI - Train\vendor\firebase\php-jwt\src\JWT.php(128): Firebase\JWT\JWT::getKey('HS256', NULL)
+#1 C:\laragon\www\CI - Train\app\Helpers\jwt_helper.php(19): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'HS256')
+#2 C:\laragon\www\CI - Train\app\Filters\JwtauthFilter.php(43): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#3 C:\laragon\www\CI - Train\system\Filters\Filters.php(181): App\Filters\JwtauthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('members/4', 'before')
+#5 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#8 {main}
+CRITICAL - 2022-08-28 10:00:24 --> Key may not be empty
+#0 C:\laragon\www\CI - Train\app\Helpers\jwt_helper.php(19): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', '')
+#1 C:\laragon\www\CI - Train\app\Filters\JwtauthFilter.php(43): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#2 C:\laragon\www\CI - Train\system\Filters\Filters.php(181): App\Filters\JwtauthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 C:\laragon\www\CI - Train\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('members/4', 'before')
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#7 {main}
+CRITICAL - 2022-08-28 10:00:32 --> "kid" empty, unable to lookup correct key
+#0 C:\laragon\www\CI - Train\vendor\firebase\php-jwt\src\JWT.php(128): Firebase\JWT\JWT::getKey('HS256', NULL)
+#1 C:\laragon\www\CI - Train\app\Helpers\jwt_helper.php(19): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'HS256')
+#2 C:\laragon\www\CI - Train\app\Filters\JwtauthFilter.php(43): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#3 C:\laragon\www\CI - Train\system\Filters\Filters.php(181): App\Filters\JwtauthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('members/4', 'before')
+#5 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#8 {main}
+CRITICAL - 2022-08-28 10:01:40 --> "kid" empty, unable to lookup correct key
+#0 C:\laragon\www\CI - Train\vendor\firebase\php-jwt\src\JWT.php(128): Firebase\JWT\JWT::getKey('kzUf4sxss4AeG5u...', NULL)
+#1 C:\laragon\www\CI - Train\app\Helpers\jwt_helper.php(19): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'kzUf4sxss4AeG5u...', 'HS256')
+#2 C:\laragon\www\CI - Train\app\Filters\JwtauthFilter.php(43): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#3 C:\laragon\www\CI - Train\system\Filters\Filters.php(181): App\Filters\JwtauthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 C:\laragon\www\CI - Train\system\CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('members/4', 'before')
+#5 C:\laragon\www\CI - Train\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\CI - Train\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\laragon\www\CI - Train\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#8 {main}
